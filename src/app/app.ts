@@ -10,7 +10,7 @@ import { Footer } from './footer/footer';
   imports: [RouterOutlet, Header, Sidenav, HeroSection, Footer],
   template: `
     <app-header />
-    <div class="grid grid-cols-[1fr_56rem] max-w-6xl mx-auto">
+    <div class="grid grid-cols-[1fr_56rem] gap-4 max-w-6xl mx-auto">
       <app-sidenav />
       <app-hero-section />
     </div>
