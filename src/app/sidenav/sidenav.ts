@@ -5,6 +5,7 @@ import { MatIcon } from '@angular/material/icon';
   selector: 'app-sidenav',
   imports: [MatIcon],
   template: `
+<!--    TODO: 這邊的pattern應該是一樣的，可以考慮用for loop去做-->
     <section>
       <div class="flex items-center justify-between hover:text-red-700 cursor-pointer">
         <div class="flex items-end">
@@ -53,6 +54,7 @@ import { MatIcon } from '@angular/material/icon';
         </div>
       </div>
       <div class="flex items-end justify-between hover:text-red-700 cursor-pointer">
+<!--        TODO: 這邊的icon沒有對齊-->
         <div class="flex items-end">
           <mat-icon
             class="text-base
@@ -74,6 +76,7 @@ import { MatIcon } from '@angular/material/icon';
         </div>
       </ul>
       <div class="flex items-end justify-between hover:text-red-700 cursor-pointer">
+        <!--        TODO: 這邊的icon沒有對齊-->
         <div class="flex items-end">
           <mat-icon
             class="text-base

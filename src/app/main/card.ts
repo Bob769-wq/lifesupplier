@@ -24,7 +24,9 @@ interface CardList {
       <div class="p-4 border border-[E5E5E5]"></div>
 
       <div class="grid grid-cols-4 gap-5 p-7 my-7 border border-[#e5e5e5]">
+<!--        TODO: 這邊應該要包成dumb component，這個已經講過很多次了，如果真的不會的話要問-->
         @for (item of cardItems; track item.id) {
+<!--          TODO: 這邊為什麼需要整個拆開？應該是有選項的時候顯示，沒有的話空白，只要處理choice的那塊就好，其他地方都是一樣的吧？-->
           @if (item.choice) {
             <div class="p-2 flex flex-col border border-[#e5e5e5]">
               <a [routerLink]="item.link"
@@ -41,6 +43,7 @@ interface CardList {
 
               <div class="flex flex-col gap-2 text-[#808080] mt-2">
                 <button class="border border-[#e5e5e5] px-2 py-1">
+<!--                  TODO: 這個dropdown可以用mat-select做-->
                   <div class="flex items-center justify-between">
                     <p class="font-medium">請選擇</p>
                     <mat-icon>arrow_drop_down</mat-icon>
@@ -53,6 +56,7 @@ interface CardList {
                     <mat-icon class="text-red-700">add</mat-icon>
                   </div>
                 </button>
+<!--                TODO: 框框有一點圓角-->
                 <button class="border border-[#c14847] text-[#C14847] px-2 py-1">選購</button>
               </div>
             </div>
@@ -94,6 +98,7 @@ interface CardList {
       <div class="bg-[#32373A] text-white p-3">
         <h4 class="font-bold">已選購區</h4>
       </div>
+<!--      TODO: 如果這裡面有資料的時候顯示的地方可能要做一下-->
       <div class="p-4 border border-[E5E5E5] mb-12"></div>
     </section>
   `,

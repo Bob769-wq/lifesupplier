@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
       <div class="bg-[#989B9C] py-8">
         <div class="max-w-6xl mx-auto flex justify-between items-center text-white font-medium">
           <div class="flex">
+<!--            TODO: 這邊沒有對齊，右邊icon的大小可以再調一下-->
             <div class="w-20">
               <img src="/footerlogo.png" class="w-full" alt="logo" />
             </div>

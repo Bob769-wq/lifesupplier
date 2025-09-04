@@ -36,10 +36,12 @@ import { Card } from './card';
       </div>
     </section>
 
+<!--    TODO: 框框有陰影-->
     <div
       class="flex justify-between items-center p-7 border border-[#E5E5E5] bg-white sticky top-0"
     >
       <div class="flex flex-col justify-center gap-1">
+<!--        TODO: 促銷跟後面的內容應該有間隔-->
         <p>
           <span class="text-white inline-block px-1 bg-[#E96759]">促銷</span>再＄<span
             class="text-red-700 font-bold"
